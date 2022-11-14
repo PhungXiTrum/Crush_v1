@@ -8,7 +8,7 @@ const textConfig = {
   text7: "Cho em biết lý do được không",
   text8: "Send",
   text9: "Vì em tốt bụng",
-  text10: "iu chị Quy 3000 ",
+  text10: "iu chị Quy 3000 <333 ",
   text11:
     "Tối nay em qua đón chị đi chơi nhé, được thì ib cho em",
   text12: "Okii lunn <3",
