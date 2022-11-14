@@ -10,7 +10,7 @@ const textConfig = {
   text9: "Vì em tốt bụng",
   text10: "Em cám ơn, iu chị Quy",
   text11:
-    "Tối nay em qua đón chị đi chơi nhé",
+    "Tối nay em qua đón chị đi chơi nhé, được thì ib cho em",
   text12: "Okii lunn <3",
 };
 
