@@ -31,6 +31,11 @@
   background-position: 50%;
   -webkit-filter: blur(4px);
 }
+
+.swal2-image{
+  object-fit: contain;
+}
+
 .swal2-title, .swal2-content{
   color: azure !important;
 }
@@ -44,10 +49,11 @@ header h2 {
   text-align: center;
 	margin-bottom: 30px;
 }
-header h4 {
-  font-family: 'Pacifico';
-  text-align: center;
-}
+  header h4 {
+    font-family: 'Pacifico';
+    text-align: center;
+    padding: 15px;
+  }
 
 @media only screen and (max-width: 500px) {
   header h2 {
@@ -79,4 +85,7 @@ header h4 {
     padding: 3px;
     -webkit-transition: all 0.3s ease-out;
   }
+}
+.swal2-backdrop-show{
+  background-size: 200px 100px !important;
 }
