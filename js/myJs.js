@@ -59,31 +59,31 @@ $(document).ready(function () {
     $("#yes").css("top", topNO);
   }
   // move random button póition
-  function moveButton() {
-    var audio = new Audio("sound/Swish1.mp3");
+function moveButton() {
+    var audio = new Audio('sound/Swish1.mp3');
     audio.play();
-    if (screen.width <= 600) {
-      var x = Math.random() * 300;
-      var y = Math.random() * 500;
-    } else {
-      var x = Math.random() * 500;
-      var y = Math.random() * 500;
-    }
-    var left = x + "px";
-    var top = y + "px";
-    $("#no").css("left", left);
-    $("#no").css("top", top);
-  }
+    var x = Math.random() * ($(window).width() - $('#no').width()) * 0.9 ;
+    var y = Math.random() * ($(window).height() - $('#no').height()) * 0.9;
+    var left = x + 'px';
+    var top = y + 'px';
+    $('#no').css("left", left);
+    $('#no').css("top", top);
+}
 
-  var n = 0;
-  $("#no").mousemove(function () {
-    if (n < 1) switchButton();
-    if (n > 1) moveButton();
+init()
+
+var n = 0;
+$('#no').mousemove(function() {
+    if (n < 1)
+        switchButton();
+    if (n > 1)
+        moveButton();
     n++;
-  });
-  $("#no").click(() => {
-    if (screen.width >= 900) switchButton();
-  });
+});
+$('#no').click(() => {
+    if (screen.width>=900)
+        switchButton();
+})
 
   // generate text in input
   function textGenerate() {
@@ -103,8 +103,8 @@ $(document).ready(function () {
       }
     }
     $("#txtReason").val(n);
-  }
-
+    setTimeout("textGenerate()", 1);
+}
   // show popup
   $("#yes").click(function () {
     var audio = new Audio("sound/tick.mp3");
